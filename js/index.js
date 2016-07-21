@@ -16,10 +16,9 @@ $('.four-oh-four-form').on('submit', function(e){
   var val = $(this).children($('.404-input')).val().toLowerCase();
   var href;
 
-	 if (val.charAt(0) + val.charAt(1) === 'cd'){
-     var res = val.replace("cd ", "");
-    window.location.href = res;
-    resetForm();
+if (val !== ''){
+	ie(val)
+    resetForm("nill");
   }else {
     resetForm();
   }
