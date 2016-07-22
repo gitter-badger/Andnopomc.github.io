@@ -4,5 +4,5 @@ function cd(on) {
 }
 
 function man() {
-	window.location.herf = "man";
+	window.location.href = "man";
 }
