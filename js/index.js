@@ -28,11 +28,6 @@ function resetForm(withKittens){
   var message = "Sorry that command is not recognized."
   var input = $('.404-input');
 
-  if (withKittens){
-    $('.kittens').removeClass('kittens');
-    message = "Huzzzzzah Kittehs!"
-  }
-
   $('.new-output').removeClass('new-output');
   input.val('');
   $('.terminal').append('<p class="prompt">' + message + '</p><p class="prompt output new-output"></p>');
